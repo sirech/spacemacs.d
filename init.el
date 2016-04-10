@@ -254,8 +254,12 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place you code here."
   (require 'aliases)
   (require 'helpers )
-  (require 'init-osx)
   (require 'init-projectile)
+
+  ;; require is only loaded once, so this breaks if put there
+  (when (spacemacs/system-is-mac)
+    (setq mac-command-modifier 'meta)
+    (setq mac-option-modifier 'super))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
