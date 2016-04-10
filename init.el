@@ -18,27 +18,17 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
      emacs-lisp
-     (osx :variables osx-use-option-as-meta nil)
-     (ruby :variables
-           ruby-version-manager 'rbenv
-           ruby-test-runner 'rspec)
      git
      markdown
-     ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
      spell-checking
+
+     (ibuffer :variables ibuffer-group-buffers-by 'projects)
+     (osx :variables osx-use-option-as-meta nil)
+     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec)
      (syntax-checking :variables syntax-checking-enable-tooltips nil)
-     ;; version-control
 
      ;; Personal layers
      keyfreq
@@ -255,6 +245,8 @@ you should place you code here."
   (require 'aliases)
   (require 'helpers )
   (require 'init-projectile)
+
+  (desktop-save-mode 1)
 
   ;; require is only loaded once, so this breaks if put there
   (when (spacemacs/system-is-mac)
