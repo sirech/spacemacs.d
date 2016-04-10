@@ -33,8 +33,11 @@ values."
      ;; Languages
      emacs-lisp
      html
+     javascript
+     lua
      markdown
      (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec)
+     yaml
 
      ;; Personal layers
      keyfreq
@@ -251,6 +254,7 @@ you should place you code here."
   (require 'aliases)
   (require 'helpers )
   (require 'init-projectile)
+  (require 'init-programming)
 
   (desktop-save-mode 1)
 
