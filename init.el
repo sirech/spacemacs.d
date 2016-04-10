@@ -27,6 +27,9 @@ values."
      better-defaults
      emacs-lisp
      (osx :variables osx-use-option-as-meta nil)
+     (ruby :variables
+           ruby-version-manager 'rbenv
+           ruby-test-runner 'rspec)
      ;; git
      ;; markdown
      ;; org
