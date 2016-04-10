@@ -1,0 +1,48 @@
+X - aliases - done
+X - appearance - not needed
+bindings
+X - company-config
+X - dash-config
+X - defuns-buffer
+X - defuns-text
+desktop-config
+X - dired-config - only thing used is dired-narrow, maybe can be added
+X - discover-config - does not seem to be compatible?
+X - flycheck-config
+X - helm-config - need to test difference for persistent action and so on
+X - ibuffer-config(ibuffer :variables ibuffer-group-buffers-by 'projects)
+X - ido-config - faces? not sure what that does
+X - isearch-config - interesting functions, but have never used them really
+X - jsx-config - not needed right now
+X - keyfreq-config
+X - machines - not needed
+X - magit-config
+X - multiple-cursors-config - can use iedit-state instead
+X - osx-config
+X - programming - still some things missing
+X - projectile-config
+X - server-config - not needed
+X - theme
+
+
+## TO DO
+
+- update restore script
+- update tmux config
+
+## TO FIX:
+
+- C-c n: Cleanup buffer
+- Autosave stuff
+- parens stuff, specially in elisp
+- delete other windows?
+- ruby hash syntax
+- programming indent not being applied properly
+
+## TO LEARN:
+
+- html mode
+
+## Changes
+
+- C-l in helm is now C-h
