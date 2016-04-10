@@ -18,17 +18,22 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     ;; Simple layers
      auto-completion
      better-defaults
-     emacs-lisp
      git
-     markdown
      spell-checking
 
+     ;; Layers with configuration
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (osx :variables osx-use-option-as-meta nil)
-     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec)
      (syntax-checking :variables syntax-checking-enable-tooltips nil)
+
+     ;; Languages
+     emacs-lisp
+     html
+     markdown
+     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec)
 
      ;; Personal layers
      keyfreq
