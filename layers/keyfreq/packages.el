@@ -13,5 +13,5 @@
               abort-recursive-edit
               forward-char
               backward-char
-              helm-previous-line
-              helm-next-line)))))
+              evil-previous-line
+              evil-next-line)))))
