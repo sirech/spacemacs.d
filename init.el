@@ -108,7 +108,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Inconsolata"
-                               :size 17
+                               :size 19
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -255,6 +255,8 @@ you should place you code here."
   (require 'helpers )
   (require 'init-projectile)
   (require 'init-programming)
+
+  (setq powerline-default-separator nil)
 
   (desktop-save-mode 1)
 
