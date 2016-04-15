@@ -5,7 +5,17 @@
 (setq web-mode-code-indent-offset 2)
 
 ;; CSS
-(setq css-indent-offset 2)
+(eval-after-load 'css-mode
+  '(progn
+     (setq css-indent-offset 2)
+
+     (defun prelude-css-mode-defaults ()
+       (rainbow-mode +1))
+
+     (setq prelude-css-mode-hook 'prelude-css-mode-defaults)
+
+     (add-hook 'css-mode-hook (lambda ()
+                                (run-hooks 'prelude-css-mode-hook)))))
 
 ;; JS
 

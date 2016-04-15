@@ -21,6 +21,7 @@ values."
      ;; Simple layers
      auto-completion
      better-defaults
+     colors
      dash
      git
      spell-checking
