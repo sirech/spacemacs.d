@@ -32,10 +32,8 @@ X - theme
 
 ## TO FIX:
 
-- C-c n: Cleanup buffer
 - Autosave stuff
 - parens stuff, specially in elisp
-- delete other windows?
 - ruby hash syntax
 - programming indent not being applied properly
 - flyspell not working properly
@@ -47,3 +45,5 @@ X - theme
 ## Changes
 
 - C-l in helm is now C-h
+- C-c n: spc j =
+- Delete other windows: spc w C
