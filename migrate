@@ -32,11 +32,12 @@ X - theme
 
 ## TO FIX:
 
-- Autosave stuff
+- auto indent on entering insert mode
+- Autosave stuff => wait on supersave layer
 - parens stuff, specially in elisp
 - ruby hash syntax
-- programming indent not being applied properly
-- flyspell not working properly
+?- programming indent not being applied properly => does not seem to apply anymore
+?- flyspell not working properly => does not seem to apply anymore
 
 ## TO LEARN:
 
