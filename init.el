@@ -260,9 +260,6 @@ you should place you code here."
 
   (setq powerline-default-separator nil)
 
-  (desktop-save-mode 1)
-  (desktop-read)
-
   ;; require is only loaded once, so this breaks if put there
   (when (spacemacs/system-is-mac)
     (setq mac-command-modifier 'meta)
