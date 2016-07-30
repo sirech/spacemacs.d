@@ -37,6 +37,7 @@ values."
      javascript
      lua
      markdown
+     react
      ruby-on-rails
      (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec)
      yaml
