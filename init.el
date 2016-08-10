@@ -39,7 +39,7 @@ values."
      markdown
      react
      ruby-on-rails
-     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec)
+     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec ruby-insert-encoding-magic-comment nil)
      yaml
 
      ;; Personal layers
