@@ -39,7 +39,7 @@ values."
      markdown
      react
      ruby-on-rails
-     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec ruby-insert-encoding-magic-comment nil ruby-enable-enh-ruby-mode t)
+     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec ruby-insert-encoding-magic-comment nil)
      yaml
 
      ;; Personal layers
@@ -270,17 +270,3 @@ you should place you code here."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(enh-ruby-add-encoding-comment-on-save nil)
- '(js2-highlight-external-variables nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
- '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
