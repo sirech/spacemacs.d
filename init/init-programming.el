@@ -26,8 +26,7 @@
 (setq js2-indent-on-enter-key t)
 
 (with-eval-after-load 'flycheck
-  (add-to-list 'auto-mode-alist '("client.*/actions.*\\.js\\'" . react-mode))
-  (add-to-list 'auto-mode-alist '("client.*/reducers.*\\.js\\'" . react-mode))
+  (add-to-list 'auto-mode-alist '("client.*/.*\\.js\\'" . react-mode))
   )
 
 ;; Lua
