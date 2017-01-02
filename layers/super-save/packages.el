@@ -88,7 +88,6 @@
    (t (super-save-stop))))
 
 (defun super-save/post-init-window-numbering ()
-  (message "fuck")
   (super-save-mode +1))
 
 ;;; packages.el ends here
