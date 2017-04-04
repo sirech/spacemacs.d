@@ -10,7 +10,7 @@
 ;;; License: GPLv3
 
 (defconst super-save-packages
-  '(window-numbering))
+  '(winum))
 
 (defgroup super-save nil
   "Smart-saving of buffers."
@@ -29,17 +29,17 @@
     "evil-window-down"
     "evil-window-left"
     "evil-window-right"
-    "select-window-by-number"
-    "select-window-0"
-    "select-window-1"
-    "select-window-2"
-    "select-window-3"
-    "select-window-4"
-    "select-window-5"
-    "select-window-6"
-    "select-window-7"
-    "select-window-8"
-    "select-window-9")
+    "winum-select-window-by-number"
+    "winum-select-window-0"
+    "winum-select-window-1"
+    "winum-select-window-2"
+    "winum-select-window-3"
+    "winum-select-window-4"
+    "winum-select-window-5"
+    "winum-select-window-6"
+    "winum-select-window-7"
+    "winum-select-window-8"
+    "winum-select-window-9")
   "A list of commands which would trigger `super-save-command'."
   :group 'super-save
   :type '(repeat string))
@@ -87,7 +87,7 @@
    (super-save-mode (super-save-initialize))
    (t (super-save-stop))))
 
-(defun super-save/post-init-window-numbering ()
+(defun super-save/post-init-winum ()
   (super-save-mode +1))
 
 ;;; packages.el ends here
