@@ -270,6 +270,10 @@ you should place you code here."
   (when (spacemacs/system-is-mac)
     (setq mac-command-modifier 'meta)
     (setq mac-option-modifier 'super))
+
+  (setq
+   midnight-mode t
+   )
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
