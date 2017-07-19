@@ -22,15 +22,16 @@ values."
      auto-completion
      better-defaults
      colors
+     csv
      dash
      docker
      git
-     spell-checking
 
      ;; Layers with configuration
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (osx :variables osx-use-option-as-meta nil)
      (syntax-checking :variables syntax-checking-enable-tooltips nil)
+     ;; (spell-checking :variables spell-checking-enable-auto-dictionary t)
 
      ;; Languages
      emacs-lisp
