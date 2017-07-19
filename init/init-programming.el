@@ -25,9 +25,9 @@
 (setq js2-highlight-level 3)
 (setq js2-indent-on-enter-key t)
 
-(with-eval-after-load 'flycheck
-  (add-to-list 'auto-mode-alist '("client.*/.*\\.js\\'" . react-mode))
-  )
+;; (with-eval-after-load 'flycheck
+;;   (add-to-list 'auto-mode-alist '("client.*/.*\\.js\\'" . react-mode))
+;;   )
 
 ;; Lua
 (setq lua-indent-level 4)
