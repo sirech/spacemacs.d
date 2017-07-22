@@ -7,7 +7,7 @@
     eslintd-fix
     evil-matchit
     flycheck
-    prettier-js
+    ;; prettier-js
     rjsx-mode
     smartparens
     ;; tern
@@ -44,17 +44,17 @@
     :config
     (modify-syntax-entry ?_ "w" js2-mode-syntax-table)))
 
-(defun aj-javascript/init-prettier-js ()
-  (use-package prettier-js
-    :defer t
-    :init
-    (progn
-      (add-hook 'rjsx-mode-hook 'prettier-js-mode)
-      (setq prettier-js-args '(
-                               "--trailing-comma" "es5"
-                               "--bracket-spacing" "false"
-                               "--no-semi"
-                               "--single-quote")))))
+;; (defun aj-javascript/init-prettier-js ()
+;;   (use-package prettier-js
+;;     :defer t
+;;     :init
+;;     (progn
+;;       (add-hook 'rjsx-mode-hook 'prettier-js-mode)
+;;       (setq prettier-js-args '(
+;;                                "--trailing-comma" "es5"
+;;                                "--bracket-spacing" "false"
+;;                                "--no-semi"
+;;                                "--single-quote")))))
 
 (defun aj-javascript/post-init-add-node-modules-path ()
   (with-eval-after-load 'rjsx-mode
