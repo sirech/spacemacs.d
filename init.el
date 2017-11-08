@@ -119,10 +119,7 @@ values."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style '(hybrid :variables
-                                       hybrid-mode-enable-evilified-state t
-                                       hybrid-mode-enable-hjkl-bindings t
-                                       hybrid-mode-default-state 'normal)
+   dotspacemacs-editing-style 'vim
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -336,6 +333,7 @@ you should place you code here."
   (require 'init-projectile)
   (require 'init-programming)
   (require 'init-git)
+  (require 'init-bindings)
 
   (setq magic-repository-directories '("~/workspace/"))
 
