@@ -44,7 +44,7 @@ values."
 
      ;; Infra
      docker
-     terraform
+     ;; terraform
 
      ;; Layers with configuration
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
@@ -70,6 +70,7 @@ values."
 
      ;; Personal layers
      keyfreq
+     sirech-terraform
      super-save
      )
    ;; List of additional packages that will be installed without being
