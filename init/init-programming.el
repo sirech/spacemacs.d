@@ -32,4 +32,11 @@
 ;; Lua
 (setq lua-indent-level 4)
 
+;; Docker
+(eval-after-load 'dockerfile-mode
+  '(progn
+     (when (executable-find "hadolint")
+       (spacemacs/add-flycheck-hook 'dockerfile-mode))))
+
+
 (provide 'init-programming)
