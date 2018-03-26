@@ -4,22 +4,13 @@
     company
     company-flow
     ;; company-tern
-    eslintd-fix
     evil-matchit
     flycheck
-    ;; prettier-js
+    prettier-js
     rjsx-mode
     smartparens
     ;; tern
     ))
-
-(defun aj-javascript/init-eslintd-fix ()
-  (use-package eslintd-fix
-    :defer t
-    :commands eslintd-fix-mode
-    :init
-    (progn
-      (add-hook 'rjsx-mode-hook #'eslintd-fix-mode t))))
 
 (defun aj-javascript/init-rjsx-mode ()
   (use-package rjsx-mode
@@ -40,25 +31,25 @@
       (advice-add #'js-jsx-indent-line
                   :after
                   #'aj-javascript/js-jsx-indent-line-align-closing-bracket)
-      (add-hook 'rjsx-mode-hook #'aj-javascript/eslintd-set-flycheck-executable t))
+      )
     :config
     (modify-syntax-entry ?_ "w" js2-mode-syntax-table)))
 
-;; (defun aj-javascript/init-prettier-js ()
-;;   (use-package prettier-js
-;;     :defer t
-;;     :init
-;;     (progn
-;;       (add-hook 'rjsx-mode-hook 'prettier-js-mode)
-;;       (setq prettier-js-args '(
-;;                                "--trailing-comma" "es5"
-;;                                "--bracket-spacing" "false"
-;;                                "--no-semi"
-;;                                "--single-quote")))))
+(defun aj-javascript/init-add-node-modules-path ()
+  (use-package add-node-modules-path
+    :defer t
+    :init
+    (progn
+      (add-hook 'rjsx-mode-hook 'add-node-modules-path)
+      )))
 
-(defun aj-javascript/post-init-add-node-modules-path ()
-  (with-eval-after-load 'rjsx-mode
-    (add-hook 'rjsx-mode-hook #'add-node-modules-path)))
+(defun aj-javascript/init-prettier-js ()
+  (use-package prettier-js
+    :defer t
+    :init
+    (progn
+      (add-hook 'rjsx-mode-hook 'prettier-js-mode)
+      )))
 
 (defun aj-javascript/post-init-company ()
   (spacemacs|add-company-hook rjsx-mode))
@@ -84,7 +75,6 @@
     (push 'javascript-jshint flycheck-disabled-checkers)
     (push 'json-jsonlint flycheck-disabled-checkers)
     (flycheck-add-mode 'javascript-eslint 'rjsx-mode))
-  (add-hook 'rjsx-mode-hook #'spacemacs//react-use-eslint-from-node-modules)
   (spacemacs/add-flycheck-hook 'rjsx-mode))
 
 (defun aj-javascript/post-init-smartparens ()
