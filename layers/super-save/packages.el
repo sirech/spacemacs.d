@@ -29,6 +29,7 @@
     "evil-window-down"
     "evil-window-left"
     "evil-window-right"
+    "evil-window-next"
     "winum-select-window-by-number"
     "winum-select-window-0"
     "winum-select-window-1"
