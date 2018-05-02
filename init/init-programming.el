@@ -9,11 +9,15 @@
   '(progn
      (setq css-indent-offset 2)
 
+     (setq flycheck-stylelintrc ".stylelintrc")
+     (spacemacs/add-flycheck-hook 'css-mode)
+
      (defun prelude-css-mode-defaults ()
        (rainbow-mode +1))
 
      (setq prelude-css-mode-hook 'prelude-css-mode-defaults)
 
+     (add-hook 'css-mode-hook 'add-node-modules-path)
      (add-hook 'css-mode-hook (lambda ()
                                 (run-hooks 'prelude-css-mode-hook)))))
 
