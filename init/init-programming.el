@@ -42,5 +42,9 @@
      (when (executable-find "hadolint")
        (spacemacs/add-flycheck-hook 'dockerfile-mode))))
 
+;; Terraform
+(eval-after-load 'terraform-mode
+  '(progn
+     (add-hook 'terraform-mode-hook #'terraform-format-on-save-mode)))
 
 (provide 'init-programming)
