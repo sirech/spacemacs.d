@@ -39,8 +39,10 @@ values."
      csv
      dash
      helm
+     helpful
      git
      nginx
+     syntax-checking
 
      ;; Infra
      docker
