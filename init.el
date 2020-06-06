@@ -60,7 +60,7 @@ This function should only modify configuration layer settings."
      emacs-lisp
      (go :variables go-tab-width 4 go-use-gometalinter t gofmt-command "goimports")
      html
-     (javascript :variables javascript-fmt-tool 'prettier javascript-fmt-on-save t node-add-modules-path t)
+     (javascript :variables javascript-fmt-tool 'prettier javascript-fmt-on-save t node-add-modules-path t javascript-backend 'lsp)
      jsonnet
      lua
      markdown
