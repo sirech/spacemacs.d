@@ -47,7 +47,7 @@ This function should only modify configuration layer settings."
 
      ;; Infra
      docker
-     terraform
+     (terraform :variables terraform-auto-format-on-save t)
 
      ;; Layers with configuration
      lsp
