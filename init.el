@@ -69,6 +69,7 @@ This function should only modify configuration layer settings."
      react
      ruby-on-rails
      (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec ruby-insert-encoding-magic-comment nil)
+     rust
      shell-scripts
      sql
      (typescript :variables typescript-fmt-on-save nil typescript-fmt-tool 'typescript-formatter)
