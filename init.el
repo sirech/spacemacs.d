@@ -50,13 +50,14 @@ This function should only modify configuration layer settings."
      (terraform :variables terraform-auto-format-on-save t)
 
      ;; Layers with configuration
-     lsp
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (osx :variables osx-use-option-as-meta nil)
      (syntax-checking :variables syntax-checking-enable-tooltips nil)
      ;; (spell-checking :variables spell-checking-enable-auto-dictionary t)
 
      ;; Languages
+     (lsp :variables lsp-ui-doc-enable nil)
+
      cb-groovy
      emacs-lisp
      (go :variables go-tab-width 4 go-use-gometalinter t gofmt-command "goimports")
