@@ -72,14 +72,12 @@
 (defun super-save-initialize ()
   "Setup super-save's advices and hooks."
   (super-save-advise-trigger-commands)
-  (add-hook 'mouse-leave-buffer-hook #'super-save-command)
-  (add-hook 'focus-out-hook #'super-save-command))
+  (add-function :after after-focus-change-function #'super-save-command))
 
 (defun super-save-stop ()
   "Cleanup super-save's advices and hooks."
   (super-save-remove-advice-from-trigger-commands)
-  (remove-hook 'mouse-leave-buffer-hook #'super-save-command)
-  (remove-hook 'focus-out-hook #'super-save-command))
+  (remove-function :after after-focus-change-function #'super-save-command))
 
 (define-minor-mode super-save-mode
   "A minor mode that saves your Emacs buffers when they lose focus."
