@@ -69,7 +69,7 @@ This function should only modify configuration layer settings."
      python
      react
      ruby-on-rails
-     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec ruby-insert-encoding-magic-comment nil)
+     (ruby :variables ruby-version-manager 'rbenv ruby-test-runner 'rspec ruby-insert-encoding-magic-comment nil ruby-backend 'robe)
      (rust :variables rust-format-on-save t)
      shell-scripts
      sql
