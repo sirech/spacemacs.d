@@ -77,7 +77,7 @@
 (defun super-save-stop ()
   "Cleanup super-save's advices and hooks."
   (super-save-remove-advice-from-trigger-commands)
-  (remove-function :after after-focus-change-function #'super-save-command))
+  (remove-function after-focus-change-function #'super-save-command))
 
 (define-minor-mode super-save-mode
   "A minor mode that saves your Emacs buffers when they lose focus."
