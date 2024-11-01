@@ -78,7 +78,6 @@ This function should only modify configuration layer settings."
      yaml
 
      ;; Personal layers
-     keyfreq
      super-save
      )
 
@@ -559,7 +558,7 @@ variables declared in `~/.spacemacs.env' or `~/.spacemacs.d/.spacemacs.env'.
 See the header of this file for more information."
   (setq spacemacs-ignored-environment-variables '(".*_TOKEN" ".*_KEY"))
   (spacemacs/load-spacemacs-env)
-)
+  )
 
 (defun dotspacemacs/user-init ()
   "Initialization for user code:
@@ -575,7 +574,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 This function is called only while dumping Spacemacs configuration. You can
 `require' or `load' the libraries of your choice that will be included in the
 dump."
-)
+  )
 
 
 (defun dotspacemacs/user-config ()
@@ -634,30 +633,30 @@ before packages are loaded."
 This is an auto-generated function, do not modify its content directly, use
 Emacs customize menu instead.
 This function is called at the very end of Spacemacs initialization."
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(company-shell-dont-fetch-meta t)
- '(evil-want-fine-undo t)
- '(helm-ag-base-command "rg --vimgrep --no-heading --smart-case")
- '(helm-ag-use-agignore t)
- '(js-indent-level 2 t)
- '(js2-mode-show-parse-errors nil t)
- '(js2-mode-show-strict-warnings nil t)
- '(package-selected-packages
-   '(import-js grizzl lv dash-docs transient add-node-modules-path tide typescript-mode flycheck-gometalinter go-guru go-eldoc company-go go-mode groovy-mode ghub let-alist insert-shebang fish-mode company-shell terraform-mode hcl-mode vimrc-mode dactyl-mode spinner minitest parent-mode gitignore-mode pos-tip flx anzu goto-chg json-snatcher json-reformat web-completion-data dash-functional popup dash yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic sql-indent nginx-mode prettier-js rjsx-mode eslintd-fix csv-mode diminish winum unfill fuzzy org multiple-cursors packed avy async pkg-info epl haml-mode powerline pug-mode inflections hide-comnt bind-key tern bind-map highlight yasnippet magit-popup inf-ruby pcre2el dockerfile-mode docker tablist docker-tramp rake hydra iedit auto-complete f smartparens evil undo-tree flycheck company request helm helm-core projectile markdown-mode magit git-commit with-editor js2-mode s uuidgen toc-org osx-dictionary org-plus-contrib org-bullets mwim livid-mode skewer-mode simple-httpd link-hint git-link flyspell-correct-helm flyspell-correct eyebrowse evil-visual-mark-mode evil-unimpaired evil-ediff dumb-jump column-enforce-mode color-identifiers-mode yaml-mode ws-butler window-numbering which-key web-mode web-beautify volatile-highlights vi-tilde-fringe use-package tagedit spacemacs-theme spaceline solarized-theme smooth-scrolling smeargle slim-mode scss-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe reveal-in-osx-finder restart-emacs rbenv rainbow-mode rainbow-identifiers rainbow-delimiters quelpa projectile-rails popwin persp-mode pbcopy paradox page-break-lines osx-trash orgit open-junk-file neotree move-text mmm-mode markdown-toc magit-gitflow macrostep lua-mode lorem-ipsum linum-relative leuven-theme less-css-mode launchctl keyfreq json-mode js2-refactor js-doc jade-mode info+ indent-guide ido-vertical-mode ibuffer-projectile hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flyspell helm-flx helm-descbinds helm-dash helm-css-scss helm-company helm-c-yasnippet helm-ag google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger gh-md flycheck-pos-tip flx-ido fill-column-indicator feature-mode fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-args evil-anzu eval-sexp-fu emmet-mode elisp-slime-nav define-word dash-at-point company-web company-tern company-statistics company-quickhelp coffee-mode clean-aindent-mode chruby bundler buffer-move bracketed-paste auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))
- '(projectile-git-submodule-command nil)
- '(sh-basic-offset 2)
- '(typescript-indent-level 2))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((((class color) (min-colors 89)) (:foreground "#657b83" :background "#fdf6e3"))))
- '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
- '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil))))
- '(highlight-parentheses-highlight ((nil (:weight ultra-bold))) t))
-)
+  (custom-set-variables
+   ;; custom-set-variables was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(company-shell-dont-fetch-meta t)
+   '(evil-want-fine-undo t)
+   '(helm-ag-base-command "rg --vimgrep --no-heading --smart-case")
+   '(helm-ag-use-agignore t)
+   '(js-indent-level 2 t)
+   '(js2-mode-show-parse-errors nil t)
+   '(js2-mode-show-strict-warnings nil t)
+   '(package-selected-packages
+     '(import-js grizzl lv dash-docs transient add-node-modules-path tide typescript-mode flycheck-gometalinter go-guru go-eldoc company-go go-mode groovy-mode ghub let-alist insert-shebang fish-mode company-shell terraform-mode hcl-mode vimrc-mode dactyl-mode spinner minitest parent-mode gitignore-mode pos-tip flx anzu goto-chg json-snatcher json-reformat web-completion-data dash-functional popup dash yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic sql-indent nginx-mode prettier-js rjsx-mode eslintd-fix csv-mode diminish winum unfill fuzzy org multiple-cursors packed avy async pkg-info epl haml-mode powerline pug-mode inflections hide-comnt bind-key tern bind-map highlight yasnippet magit-popup inf-ruby pcre2el dockerfile-mode docker tablist docker-tramp rake hydra iedit auto-complete f smartparens evil undo-tree flycheck company request helm helm-core projectile markdown-mode magit git-commit with-editor js2-mode s uuidgen toc-org osx-dictionary org-plus-contrib org-bullets mwim livid-mode skewer-mode simple-httpd link-hint git-link flyspell-correct-helm flyspell-correct eyebrowse evil-visual-mark-mode evil-unimpaired evil-ediff dumb-jump column-enforce-mode color-identifiers-mode yaml-mode ws-butler window-numbering which-key web-mode web-beautify volatile-highlights vi-tilde-fringe use-package tagedit spacemacs-theme spaceline solarized-theme smooth-scrolling smeargle slim-mode scss-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe reveal-in-osx-finder restart-emacs rbenv rainbow-mode rainbow-identifiers rainbow-delimiters quelpa projectile-rails popwin persp-mode pbcopy paradox page-break-lines osx-trash orgit open-junk-file neotree move-text mmm-mode markdown-toc magit-gitflow macrostep lua-mode lorem-ipsum linum-relative leuven-theme less-css-mode launchctl keyfreq json-mode js2-refactor js-doc jade-mode info+ indent-guide ido-vertical-mode ibuffer-projectile hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flyspell helm-flx helm-descbinds helm-dash helm-css-scss helm-company helm-c-yasnippet helm-ag google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger gh-md flycheck-pos-tip flx-ido fill-column-indicator feature-mode fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-args evil-anzu eval-sexp-fu emmet-mode elisp-slime-nav define-word dash-at-point company-web company-tern company-statistics company-quickhelp coffee-mode clean-aindent-mode chruby bundler buffer-move bracketed-paste auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))
+   '(projectile-git-submodule-command nil)
+   '(sh-basic-offset 2)
+   '(typescript-indent-level 2))
+  (custom-set-faces
+   ;; custom-set-faces was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(default ((((class color) (min-colors 89)) (:foreground "#657b83" :background "#fdf6e3"))))
+   '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+   '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil))))
+   '(highlight-parentheses-highlight ((nil (:weight ultra-bold))) t))
+  )
